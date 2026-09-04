@@ -146,6 +146,15 @@
             gap: 8px;
             border: 1px solid #cbd5e1;
             font-size: 1.05rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .phone-item:hover {
+            background: var(--brand-blue);
+            color: #ffffff;
+            border-color: var(--brand-blue);
+            transform: translateY(-2px);
         }
 
         /* الواتساب */
@@ -300,12 +309,12 @@
 
         <!-- الهواتف الثابتة -->
         <section>
-            <h2><i class="fa-solid fa-phone" style="color: var(--brand-red);"></i> أرقام الهاتف الثابت</h2>
-            <ul class="phone-list">
-                <li class="phone-item"><i class="fa-solid fa-phone-flip"></i> 08-375575</li>
-                <li class="phone-item"><i class="fa-solid fa-phone-flip"></i> 08-375675</li>
-                <li class="phone-item"><i class="fa-solid fa-phone-flip"></i> 08-375775</li>
-            </ul>
+            <h2><i class="fa-solid fa-phone" style="color: var(--brand-red);"></i> أرقام الهاتف الثابت (اضغط للاتصال)</h2>
+            <div class="phone-list">
+                <a href="tel:+9618375575" class="phone-item"><i class="fa-solid fa-phone-flip"></i> 08-375575</a>
+                <a href="tel:+9618375675" class="phone-item"><i class="fa-solid fa-phone-flip"></i> 08-375675</a>
+                <a href="tel:+9618375775" class="phone-item"><i class="fa-solid fa-phone-flip"></i> 08-375775</a>
+            </div>
         </section>
 
         <!-- وسائل التواصل الاجتماعي -->
